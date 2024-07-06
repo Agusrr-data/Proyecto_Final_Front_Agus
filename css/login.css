@@ -1,70 +1,198 @@
-/* Estilos generales */
+
+/* Estilos para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para el formulario de inicio de sesión */
-  .login-title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .login-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .login-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover {
-    background-color: #45a049;
-  }
-  
-  .login-links {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .login-links a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .login-links a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: Arial, sans-serif; /* Define la fuente para el cuerpo del documento */
+  background-color: #fff; /* Color de fondo */
+  display: flex; /* Utiliza Flexbox para el diseño */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  min-height: 100vh; /* Altura mínima del 100% de la ventana gráfica */
+  margin: 1%; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+  display: flex; /* Utiliza Flexbox para el diseño */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%; /* Ancho completo */
+  max-width: 550px; /* Ancho máximo */
+  padding: 5px; /* Relleno interno */
+  background-color: #fff; /* Color de fondo blanco */
+  box-shadow: 0 0 0px #fff; /* Sombra del cuadro */
+  border-radius: 30px; /* Bordes redondeados */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor para el encabezado de la comunidad */
+.Community-dev {
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Texto centrado */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #010101; /* Color de texto negro */
+  font-size: 32px; /* Tamaño de fuente */
+  font-weight: 700; /* Grosor de fuente */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor para el contenido del formulario de inicio de sesión */
+.login-wrapper {
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Texto centrado */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Color de texto azul */
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor para la información de la comunidad */
+.Community-info {
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Texto centrado */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Color de texto negro */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-bottom: 30px; /* Margen inferior */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para el encabezado principal */
+.login-wrapper h1 {
+  font-size: 24px; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Margen inferior */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para los párrafos */
+.login-wrapper p {
+  margin: 10px 0; /* Margen superior e inferior */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor para los botones de inicio de sesión con redes sociales */
+.social-login {
+  margin-bottom: flex; /* Margen inferior */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para los botones de redes sociales */
+.social-login .btn {
+  display: flex; /* Utiliza Flexbox para el diseño */
+  align-items: center; /* Centra verticalmente el contenido dentro del botón */
+  justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Relleno interno */
+  margin-bottom: 12px; /* Margen inferior */
+  border: 2px solid #e1e1e1; /* Borde negro */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  text-align: center; /* Texto centrado */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #000; /* Color de texto negro */
+  background-color: #fff; /* Fondo blanco */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; /* Tipo de fuente */
+  font-weight: 500; /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+
+.social-login .btn:hover {
+  background-color: #f0efef; /* Color de fondo verde al pasar el cursor */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+.social-login .btn svg {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+.social-login .btn .btn-text {
+  flex-grow: 1; /* El texto ocupa todo el espacio disponible */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Contenedor para el separador entre opciones de inicio de sesión */
+.separator {
+  display: flex; /* Utiliza Flexbox para el diseño */
+  align-items: center; /* Alinea el contenido verticalmente */
+  margin: 20px 0; /* Margen superior e inferior */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilo para el texto dentro del separador */
+.separator span {
+  margin: 0 10px; /* Margen izquierdo y derecho */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para las líneas antes y después del texto en el separador */
+.separator::before, .separator::after {
+  content: ''; /* Contenido vacío */
+  flex: 1; /* Crece para llenar el espacio disponible */
+  height: 1px; /* Altura de 1px */
+  background-color: #ddd; /* Color de fondo gris */
+}
+
+/* Contenedor para los grupos de formulario */
+.form-group {
+  margin-bottom: 15px; /* Margen inferior */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+.form-group label {
+  display: block; /* Bloque completo */
+  margin-bottom: 15px; /* Margen inferior */
+  color: #000000; /* Color de texto negro */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno interno */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+  border: 1px solid #ddd; /* Borde de 1px sólido gris */
+  border-radius: 4px; /* Bordes redondeados */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilo para el checkbox */
+.form-group input[type="checkbox"] {
+  margin-right: 5px; /* Margen derecho */
+}
+
+/* Estilos para el botón principal del formulario */
+.btn-primary {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno interno */
+  background-color: #0c75e6; /* Color de fondo azul */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  text-align: center; /* Texto centrado */
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilo para el botón principal al pasar el cursor */
+.btn-primary:hover {
+  background-color: #0c5baf; /* Color de fondo azul más oscuro al pasar el cursor */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para los enlaces dentro del formulario */
+.login-wrapper a {
+  color: #6424ad; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto; /* Tipo de fuente */
+}
+
+/* Estilos para los enlaces dentro del formulario al pasar el cursor */
+.login-wrapper a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
